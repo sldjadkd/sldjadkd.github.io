@@ -7,9 +7,13 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<script type="text/javascript">
 function init() {
-	var btn1 = document.getElementById("magisk");
-	btn1.onclick = function() {
+	var magiskBtn = document.getElementById("magisk");
+	var joinusBtn = document.getElementById("magisk");
+	magiskBtn.onclick = function() {
 		window.open("./magisk/index.html");
+	}
+	joinusBtn.onclick = function() {
+		window.open("./joinus.html");
 	}
 }
 		</script>
@@ -38,6 +42,9 @@ li:hover {
 .icon1 {
 	background-image: url("./res/icon1.png");
 }
+.icon2 {
+	background-image: url("./res/FluentAdd28Filled.png");
+}
 		</style>
 	</head>
 	<body onload="init()">
@@ -45,7 +52,7 @@ li:hover {
 		<p>如遇密码就是1145（好臭啊</p>
 		<ul>
 			<li class="icon1" id="magisk"><span>Magisk模块</span></li>
-			<li>man2</li>
+			<li class="icon2" id="joinus"><span>加入我们</span></li>
 		</ul>
 		<p>由114514维护<br>资源由SWG-iMoo、Sky-iMoo等提供<br>托管于GitHub<br>©2024 114514. All rights reserved.</p>
 	</body>
