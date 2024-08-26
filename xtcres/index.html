@@ -7,8 +7,12 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<script type="text/javascript">
 function init() {
+	var docsBtn = document.getElementById("docs");
 	var magiskBtn = document.getElementById("magisk");
 	var joinusBtn = document.getElementById("joinus");
+	docsBtn.onclick = function() {
+		window.open("./docs/index.html");
+	}
 	magiskBtn.onclick = function() {
 		window.open("./magisk/index.html");
 	}
@@ -58,6 +62,6 @@ li:hover {
 			<li class="icon1" id="magisk"><span>Magisk模块</span></li>
 			<li class="icon2" id="joinus"><span>加入我们</span></li>
 		</ul>
-		<p>由114514维护<br>SWG-iMoo、Sky-iMoo等提供资源支持<br>部分图标来自于<a href="https://github.com/microsoft/fluentui-system-icons">Fluent System Icon(©2024 Microsoft Corporation. MIT license)</a><br>托管于GitHub<br>©2024 114514. All rights reserved.</p>
+		<p>由114514维护<br>SWG-iMoo、Sky-iMoo等提供资源支持<br>部分图标来自于<a href="https://github.com/microsoft/fluentui-system-icons">Fluent System Icons(©2024 Microsoft Corporation. MIT license)</a><br>托管于GitHub<br>©2024 114514. All rights reserved.</p>
 	</body>
 </html>
