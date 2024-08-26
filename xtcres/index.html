@@ -29,14 +29,16 @@
 		.icon1::before {
             content: "";
             position: absolute;
-            left: 10px;
+            left: 10px; /* 位置调整以适应图标 */
             top: 50%;
             transform: translateY(-50%);
-            width: 24px;
-            height: 24px;
+            width: 24px; /* 图标宽度 */
+            height: 24px; /* 图标高度 */
             background-image: url('./res/icon1.png'); /* 第一个图标 */
-            background-size: cover;
-		}
+            background-size: contain; /* 确保图片适应容器 */
+            background-repeat: no-repeat; /* 防止图片重复 */
+            background-position: center; /* 图片居中 */
+        }
 		</style>
 	</head>
 	<body onload="init()">
