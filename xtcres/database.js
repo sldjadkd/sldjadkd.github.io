@@ -1,4 +1,4 @@
-# Nothing yet
+// Nothing yet
 export const data = {
 	"magisk": {
 		"sub": false,
