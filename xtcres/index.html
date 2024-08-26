@@ -16,6 +16,9 @@
             padding: 0; /* 移除默认的内边距 */
         }
         li {
+			background-repeat: no-repeat; /* 避免图标重复 */
+			background-position: left center; /* 图标位置 */
+			background-size: 24px;
             display: block; /* 使用flex布局 */
             top: 50%; /* 垂直居中对齐 */
             background-color: #f4f4f4; /* 列表项背景色 */
@@ -23,21 +26,11 @@
             border-radius: 4px; /* 圆角边框 */
             margin: 5px 0; /* 列表项间距 */
             padding: 10px; /* 列表项内边距 */
-            margin-left: 50px; /*给图标留出空间 */
+            padding-left: 50px; /*给图标留出空间 */
             transition: background-color 0.3s; /* 背景色过渡效果 */
 		}
         li:hover {
             background-color: #e2e2e2; /* 鼠标悬停时的背景色 */
-		}
-		.icon {
-			position: relative;
-			top: 50%;
-            width: 24px; /* 图标宽度 */
-            height: 24px; /* 图标高度 */
-            background-size: contain; /* 确保图片适应容器 */
-            background-repeat: no-repeat; /* 防止图片重复 */
-            display: inline-block; /* 使图标在列表项中保持行内块状 */
-            margin-right: 10px; /* 图标和文本之间的间距 */
 		}
 		.icon1 {
 			background-image: url("./res/icon1.png");
@@ -47,7 +40,7 @@
 	<body onload="init()">
 		<h2>原神</h2>
 		<ul>
-			<li><span class="icon icon1">man</span></li>
+			<li class="icon1"><span>man</span></li>
 			<li>man2</li>
 		</ul>
 	</body>
