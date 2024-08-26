@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SWG - 加入我们</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<script type="text/javascript">
+		function copyToClipboard(content) {
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				navigator.clipboard.writeText(content).then(() => {
+					window.alert("文本已成功复制到剪贴板！");
+				}).catch(e => {
+		    		window.alert("复制到剪贴板时出错: " + e + "\n原内容：" + content);
+				});
+			} else {
+				window.alert("该浏览器不支持Clipboard API\n原内容：" + content);
+			}
+		}
+	</script>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background-color: #333333;
+		}
+		.container {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 100px 50px;
+			padding: 100px 50px;
+		}
+		.container .card {
+			position: relative;
+			width: 350px;
+			height: 300px;
+			background-color: #2a2b2c;
+			border-radius: 20px;
+			box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
+			transition: 0.5s;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.container .card:hover {
+			height: 400px;
+		}
+		.container .card .imgBox {
+			position: absolute;
+			top: 20px;
+			width: 300px;
+			height: 220px;
+			border-radius: 12px;
+			transition: 0.5s;
+			overflow: hidden;
+		}
+		.container .card:hover .imgBox {
+			top: -100px;
+			scale: 0.75;
+			box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
+		}
+		.container .card .imgBox img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.container .card .content {
+			position: absolute;
+			top: 252px;
+			width: 100%;
+			padding: 0 30px;
+			height: 35px;
+			overflow: hidden;
+			text-align: center;
+			transition: 0.5s;
+		}
+		.container .card:hover .content {
+			top:130px;
+			height: 250px;
+		}
+		.container .card .content h2 {
+			font-size: 1.5em;
+			font-weight: 700;
+			color: var(--clr);
+		}
+		.container .card .content p {
+			color: #ffffff;
+		}
+		.container .card .content a {
+			position: relative;
+			top:15px;
+			display: inline-block;
+			padding: 12px 25px;
+			background-color: var(--clr);
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="card" style="--clr: #009688;">
+			<div class="imgBox"><img src="">
+			</div>
+			<div class="content">
+				<h2>交流群1</h2>
+				<p>梦的开始（大雾</p>
+				<a href="copyToClipboard(364504134)">复制群号</a>
+			</div>
+		</div>
+		<div class="card" style="--clr: #ff3e7f;">
+			<div class="imgBox"><img src="">
+			</div>
+			<div class="content">
+				<h2>交流群2</h2>
+				<p>200人小群，平时没有人发言（悲</p>
+				<a href="copyToClipboard(753553706)">复制群号</a>
+			</div>
+		</div>
+		<div class="card" style="--clr: #03a9f4;">
+			<div class="imgBox">
+				<img src="">
+			</div>
+			<div class="content">
+				<h2>交流群3</h2>
+				<p>似乎和2群没有什么区别。</p>
+				<a href="copyToClipboard(202371181)">复制群号</a>
+			</div>
+		</div>
+		<div class="card" style="--clr: #da1001;">
+			<div class="imgBox">
+				<img src="">
+			</div>
+			<div class="content">
+				<h2>交流群4</h2>
+				<p>人最多的一个群，记得开消息免打扰。</p>
+				<a href="copyToClipboard(739082851)">复制群号</a>
+			</div>
+		</div>
+		<div class="card" style="--clr: #abfcdf;">
+			<div class="imgBox">
+				<img src="">
+			</div>
+			<div class="content">
+				<h2>QQ频道</h2>
+				<p>过于城市化了。</p>
+				<a href="https://qun.qq.com/qqweb/qunpro/share?_wv=3&_wwv=128&appChannel=share&inviteCode=23gbbzhakVE&jumpsource=shorturl#/out">加入</a>
+			</div>
+		</div>
+		<div class="card" style="--clr: #1a1b1c;">
+			<div class="imgBox">
+				<img src="">
+			</div>
+			<div class="content">
+				<h2>Lv2交流群</h2>
+				<p>想要加入得找群内管理员答题（悲</p>
+				<a href="#">bro没什么</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
