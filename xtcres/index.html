@@ -26,25 +26,24 @@
         li:hover {
             background-color: #e2e2e2; /* 鼠标悬停时的背景色 */
 		}
-		.icon1::before {
-            content: "";
-            position: absolute;
-            left: 10px; /* 位置调整以适应图标 */
-            /*top: 50%;*/
-            /*transform: translateY(-50%);*/
+		.icon {
             width: 24px; /* 图标宽度 */
             height: 24px; /* 图标高度 */
-            background-image: url('./res/icon1.png'); /* 第一个图标 */
             background-size: contain; /* 确保图片适应容器 */
             background-repeat: no-repeat; /* 防止图片重复 */
             background-position: center; /* 图片居中 */
-        }
+            display: inline-block; /* 使图标在列表项中保持行内块状 */
+            margin-right: 10px; /* 图标和文本之间的间距 */
+		}
+		.icon1 {
+			background-image: url("./res/icon1.png");
+		}
 		</style>
 	</head>
 	<body onload="init()">
 		<h2>原神</h2>
 		<ul>
-			<li class="icon1">man</li>
+			<li><span class="icon icon1">man</span></li>
 			<li>man2</li>
 		</ul>
 	</body>
