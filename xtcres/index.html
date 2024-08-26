@@ -7,7 +7,10 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<script type="text/javascript">
 			function init() {
-				
+				var btn1 = document.getElementById("magisk");
+				btn1.onclick = function() {
+					window.open("./magisk/index.html");
+				}
 			}
 		</script>
 		<style type="text/css">
@@ -38,9 +41,9 @@
 		</style>
 	</head>
 	<body onload="init()">
-		<h2>原神</h2>
+		<h2>小棺材资源库</h2>
 		<ul>
-			<li class="icon1"><span>man</span></li>
+			<li class="icon1" id="magisk"><span>Magisk模块</span></li>
 			<li>man2</li>
 		</ul>
 	</body>
