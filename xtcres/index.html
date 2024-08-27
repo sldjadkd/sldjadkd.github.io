@@ -8,12 +8,16 @@
 		<script type="text/javascript">
 function init() {
 	var searchBtn = document.getElementById("search");
+	var codeSearchBtn = document.getElementById("codeSearch");
 	var docsBtn = document.getElementById("docs");
 	var magiskBtn = document.getElementById("magisk");
 	var joinusBtn = document.getElementById("joinus");
 	var donateBtn = document.getElementById("donate");
 	searchBtn.onclick = function() {
 		window.open("./search.html");
+	}
+	codeSearchBtn.onclick = function() {
+		window.open("./codeSearch.html");
 	}
 	docsBtn.onclick = function() {
 		window.open("./docs/index.html");
@@ -54,6 +58,9 @@ li:hover {
 .icon-search {
 	background-image: url("./res/FluentFolderSearch24Regular.png")
 }
+.icon-codeSearch {
+	background-image: url("./res/FluentTagSearch24Regular.png");
+}
 .icon-docs {
 	background-image: url("./res/FluentDocumentCatchUp20Regular.png");
 }
@@ -73,6 +80,7 @@ li:hover {
 		<p>如遇密码就是1145（好臭啊<br>有问题可以<a href="https://github.com/sldjadkd/sldjadkd.github.io/issues">发送issue</a>或者向support@xtcres.952662.xyz发送垃圾邮件</p>
 		<ul>
 			<li class="icon-search" id="search"><span>搜索</span></li>
+			<li class="icon-codeSearch" id="codeSearch"><span>资源码搜索</span></li>
 			<li class="icon-docs" id="docs"><span>文档</span></li>
 			<li class="icon-magisk" id="magisk"><span>Magisk模块</span></li>
 			<li class="icon-add" id="joinus"><span>加入我们</span></li>
