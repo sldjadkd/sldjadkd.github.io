@@ -8,8 +8,12 @@
 		<script type="text/javascript">
 function init() {
 	var magiskBtn = document.getElementById("magisk");
+	var normalBtn = document.getElementById("normal");
 	magiskBtn.onclick = function() {
 		window.open("./magisk/");
+	}
+	normalBtn.onclick = function() {
+		window.open("./normal/");
 	}
 }
 		</script>
@@ -38,6 +42,9 @@ li:hover {
 .icon1 {
 	background-image: url("../res/icon1.png");
 }
+.icon2 {
+	background-image: url("../res/FluentFolderList16Regular.png");
+}
 		</style>
 	</head>
 	<body onload="init()">
@@ -45,6 +52,7 @@ li:hover {
 		<p>选择一个你感兴趣的板块来阅读。</p>
 		<ul>
 			<li class="icon1" id="magisk"><span>Magisk</span></li>
+			<li class="icon2" id="normal"><span>破解常识</span></li>
 		</ul>
 	</body>
 </html>
