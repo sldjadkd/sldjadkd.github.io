@@ -7,7 +7,11 @@
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<script type="text/javascript">
 function init() {
-	
+	var input = document.getElementById("input");
+	var submitBtn = document.getElementById("submitBtn");
+	submitBtn.onclick = function() {
+		
+	}
 }
 		</script>
 		<style type="text/css">
@@ -67,8 +71,8 @@ li:hover {
 	<body onload="init()">
 		<h1>搜索</h1>
 		<div class="input-container">
-			<input type="text" class="custom-input" placeholder="请输入文字">
-			<button class="submit-button">确定</button>
+			<input type="text" class="custom-input" placeholder="请输入要搜索的内容......" id="input">
+			<button class="submit-button" id="submitBtn">确定</button>
 		</div>
 		<ul id="list"/>
 	</body>
