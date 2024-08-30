@@ -8,17 +8,31 @@
 		<script type="text/javascript">
 import { data } from "./database.js";
 function init() {
+	var list = document.getElementById("list");
 	var input = document.getElementById("input");
 	var submitBtn = document.getElementById("submitBtn");
 	submitBtn.onclick = function() {
+		var hasResult = false;
 		var value = input.value.toLowerCase();
 		//search Magisk
 		for (let i = 0; data.magisk.data.length; i++) {
 			if (data.magisk.data[i].name.toLowerCase().includes(value)) {
+				hasResult = true;
 				
 			}
 		}
+		if (!hasResult) {
+			addItemToList(list, "无结果", void 0);
+		}
 	}
+}
+function addItemToList(list, text, onclick) {
+	var item = document.createElement("li");
+	var span = document.createElement("span");
+	span.appendChild(document.createTextNode(text));
+	item.appendChild(span);
+	item.onclick = onclick;
+	list.appendChild(item);
 }
 		</script>
 		<style type="text/css">
