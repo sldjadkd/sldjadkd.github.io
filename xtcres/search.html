@@ -28,6 +28,10 @@ li {
 li:hover {
 	background-color: #e2e2e2;
 }
+.input-container {
+	display: flex;
+	width: 100%;
+}
 .custom-input {
 	width: 100%;
 	padding: 10px;
@@ -41,11 +45,31 @@ li:hover {
 .custom-input:focus {
 	border-color: #66afe9;
 }
+.submit-button {
+	padding: 10px 20px;
+	border: 2px solid #ccc;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.submit-button:hover {
+	background-color: #e1e1e1;
+}
+.submit-button:focus {
+	border-color: #66afe9;
+	outline: none;
+}
 		</style>
 	</head>
 	<body onload="init()">
 		<h1>搜索</h1>
-		<input type="text" class="custom-input" placeholder="请输入文字">
+		<div class="input-container">
+			<input type="text" class="custom-input" placeholder="请输入文字">
+			<button class="submit-button">确定</button>
+		</div>
 		<ul id="list"/>
 	</body>
 </html>
