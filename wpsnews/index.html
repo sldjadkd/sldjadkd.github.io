@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>sldjadkd - 小棺材资源库</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<script type="text/javascript">
+		function init() {
+			const hasKey = window.prompt("请输入访问密钥") == "滨湖823班";
+			if (!hasKey) {
+				window.alert("给我爬。");
+				window.opener = null;
+				window.open("", "_self");
+				window.close();
+			}
+		}
+	</script>
+	<style type="text/css">
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		li {
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: 30px;
+			display: block;
+			top: 50%;
+			background-color: #f4f4f4;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin: 5px 0;
+			padding: 10px;
+			padding-left: 36px;
+			transition: background-color 0.3s;
+		}
+		li:hover {
+			background-color: #e2e2e2;
+		}
+	</style>
+</head>
+<body onload="init()">
+	<h1>WPS新闻站</h1>
+	<p>此为初二（23）班内部新闻网站，没有访问密钥全部给我爬。</p>
+	<ul id="list"/>
+</body>
+</html>
