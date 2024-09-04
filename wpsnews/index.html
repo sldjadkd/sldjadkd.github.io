@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>sldjadkd - 小棺材资源库</title>
+	<title>WPS新闻站</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 	<script type="text/javascript">
@@ -10,9 +10,7 @@
 			const hasKey = window.prompt("请输入访问密钥") == "滨湖823班";
 			if (!hasKey) {
 				window.alert("给我爬。");
-				window.opener = null;
-				window.open("", "_self");
-				window.close();
+				window.history.back();
 			}
 		}
 	</script>
