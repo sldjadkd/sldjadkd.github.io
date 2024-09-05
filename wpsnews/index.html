@@ -6,12 +6,28 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 	<script type="text/javascript">
+		import { data } from "./database.js";
 		function init() {
 			const hasKey = window.prompt("请输入访问密钥") == "滨湖823班";
 			if (!hasKey) {
 				window.alert("给我爬。");
 				window.history.back();
+				return;
 			}
+			const list = document.getElementById("list");
+			for (let i = 0; i < data.length; i++) {
+				var item = document.createElement("li");
+				item.innerHTML = "<span>" + data.title + "</span><br><span style=\"--clr #999999;\">提交于" + formatTimestamp(data.timestamp, true) + "</span>";
+				item.onclick = function() {
+					window.open("./" + data.uuid + "");
+				}
+				list.appendChild(item);
+			}
+		}
+		function formatTimestamp(timestamp, isSecond) {
+			if (isSecond) timestamp *= 1000;
+			const date = new Date(timestamp);
+			return `${date.getFullYear()}年${String(date.getMonth() + 1).padStart(2, '0')}月${String(date.getDate()).padStart(2, '0')}日 ${date.getHours()}:${date.getMinutes()}`;
 		}
 	</script>
 	<style type="text/css">
@@ -40,7 +56,7 @@
 </head>
 <body onload="init()">
 	<h1>WPS新闻站</h1>
-	<p>此为初二（23）班内部新闻网站，没有访问密钥全部给我爬。</p>
+	<p>此为初二（23）班内部新闻网站，<span style="color:red;">没有访问密钥全部给我爬。</span></p>
 	<ul id="list"/>
 </body>
 </html>
