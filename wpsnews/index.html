@@ -24,9 +24,9 @@
 			const list = document.getElementById("list");
 			for (let i = 0; i < data.length; i++) {
 				var item = document.createElement("li");
-				item.innerHTML = "<span>" + data.title + "</span><br><span style=\"--clr #999999;\">提交于" + formatTimestamp(data.timestamp, true) + "</span>";
+				item.innerHTML = "<span>" + data[i].title + "</span><br><span style=\"--clr #999999;\">提交于" + formatTimestamp(data[i].timestamp, true) + "</span>";
 				item.onclick = function() {
-					window.open("./" + data.uuid + "");
+					window.open("./" + data[i].uuid + "");
 				}
 				list.appendChild(item);
 			}
