@@ -28,7 +28,7 @@
 				return;
 			}
 			const list = document.getElementById("list");
-			for (let i = data.length; i > 0; --i) {
+			for (let i = data.length - 1; i >= 0; i--) {
 				var item = document.createElement("li");
 				item.innerHTML = "<span>" + data[i].title + "</span><br><span style=\"--clr #999999;font-size:10px\">提交于" + formatTimestamp(data[i].timestamp, true) + "</span>";
 				item.onclick = function() {
