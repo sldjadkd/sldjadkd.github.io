@@ -12,6 +12,12 @@
 				"icon": "class",
 				"timestamp": 1725461089,
 				"uuid": "9292bb25-ccc7-4d38-94f0-076e034394fd"
+			},
+			{
+				"title": "如何反内卷",
+				"icon": "class",
+				"timestamp": 1725760760,
+				"uuid": "3d09f46a-5d71-4230-9d66-25e37d0cc3ec"
 			}
 		];
 		function init() {
@@ -24,7 +30,7 @@
 			const list = document.getElementById("list");
 			for (let i = 0; i < data.length; i++) {
 				var item = document.createElement("li");
-				item.innerHTML = "<span>" + data[i].title + "</span><br><span style=\"--clr #999999;\">提交于" + formatTimestamp(data[i].timestamp, true) + "</span>";
+				item.innerHTML = "<span>" + data[i].title + "</span><br><span style=\"--clr #999999;font-size:24px\">提交于" + formatTimestamp(data[i].timestamp, true) + "</span>";
 				item.onclick = function() {
 					window.open("./" + data[i].uuid + "");
 				}
