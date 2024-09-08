@@ -5,9 +5,9 @@
 	<title>WPS新闻站</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-	<script src="./database.js" type="module"></script>
+	<script src="./database.js" type="text/javascript;module"></script>
 	<script type="text/javascript">
-		import { data } from "database";
+		import { data } from "./database.js";
 		function init() {
 			const hasKey = window.prompt("请输入访问密钥") == "滨湖823班";
 			if (!hasKey) {
