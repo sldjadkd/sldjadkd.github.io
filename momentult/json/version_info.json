@@ -1,7 +1,8 @@
 {
-	"version_name": "v2beta3.1",
-	"moment_version_code": 53200,
+	"version_name": "v3preview",
+	"moment_version_code": 55410,
+	"ult_version_code": 1,
 	"beta": true,
-	"description": "",
+	"description": "点击输入文本",
 	"url": ""
 }
