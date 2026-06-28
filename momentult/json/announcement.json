@@ -1,0 +1,18 @@
+{
+    "on_start": {
+        "is_mounted": false,
+        "title": "v1新版本可用",
+        "tags": ["更新"],
+        "content": "啥也没有",
+        "timestamp": 91
+    },
+    "data": [
+        {
+            "is_mounted": false,
+            "title": "测试",
+            "tags": ["测试"],
+            "content": "测试",
+            "timestamp": 91
+        }
+    ]
+}
