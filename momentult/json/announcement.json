@@ -1,18 +1,20 @@
 {
     "on_start": {
+        "severity": 3,
         "is_mounted": false,
-        "title": "v1新版本可用",
-        "tags": ["更新"],
-        "content": "啥也没有",
-        "timestamp": 91
+        "title": "模块 Alpha 版本可用",
+        "tags": ["更新", "预览"],
+        "content": "修了几个bug而已，不足挂齿",
+        "timestamp": 1784473487
     },
     "data": [
         {
+            "severity": 0,
             "is_mounted": false,
             "title": "测试",
-            "tags": ["测试"],
-            "content": "测试",
-            "timestamp": 91
+            "tags": ["测试", "恶搞"],
+            "content": "1145141919810",
+            "timestamp": 1784473487
         }
     ]
 }
