@@ -1,0 +1,60 @@
+{
+    "on_start": {
+        "severity": 3,
+        "is_mounted": false,
+        "title": "模块 Alpha 版本可用",
+        "tags": ["更新", "预览"],
+        "content": "修了几个bug而已，不足挂齿",
+        "timestamp": 1784473487
+    },
+    "data": [
+        {
+            "severity": 4,
+            "is_mounted": true,
+            "title": "fwork爱看……",
+            "tags": ["测试", "恶搞"],
+            "content": "卧槽\n哦不不不\n我无疑是愤怒的😡😡😡😡😡😡😡😡😡\nfwork你这个18码的居然背着我偷偷看神秘视频",
+            "timestamp": 1785385282
+        },
+        {
+            "severity": 0,
+            "is_mounted": false,
+            "title": "测试",
+            "tags": ["测试", "恶搞"],
+            "content": "1145141919810",
+            "timestamp": 1784473487
+        },
+        {
+            "severity": 1,
+            "is_mounted": false,
+            "title": "fwork爱玩原神",
+            "tags": ["测试", "恶搞"],
+            "content": "1145141919810",
+            "timestamp": 1784473487
+        },
+        {
+            "severity": 2,
+            "is_mounted": false,
+            "title": "我是傻逼",
+            "tags": ["测试", "恶搞"],
+            "content": "1145141919810",
+            "timestamp": 1784473487
+        },
+        {
+            "severity": 3,
+            "is_mounted": false,
+            "title": "好友圈Ultimate永久停更",
+            "tags": ["测试", "恶搞"],
+            "content": "1145141919810",
+            "timestamp": 1784473487
+        },
+        {
+            "severity": 4,
+            "is_mounted": false,
+            "title": "讣告",
+            "tags": ["测试", "恶搞"],
+            "content": "114514似了，兑，英改师",
+            "timestamp": 1784473487
+        }
+    ]
+}
