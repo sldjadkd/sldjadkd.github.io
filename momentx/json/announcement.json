@@ -62,7 +62,7 @@
             "is_markdown": true,
             "title": "Markdown测试",
             "tags": ["测试"],
-            "content": "# 1标题\n## 2标题\n### 3标题\n*无序*列表\n- fuck\n- you\n- bitch\n**有序**列表\n1. mamba\n2. out\n~~何意味~~\n> What can I **say**?\n> __ikun__\n[测试](https://github.com)",
+            "content": "# 1标题\n## 2标题\n### 3标题\n*无序*列表\n- fuck\n- you\n- bitch\n**有序**列表\n1. mamba\n2. out\n~~何意味~~\n> What can I **say**?\n> __ikun__\n[测试](https://github.com)\n```kotlin\nfun main() = println(\"Hello World!\")\n```",
             "timestamp": 1784480003
         }
     ]
